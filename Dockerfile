@@ -1,5 +1,6 @@
 FROM node:12-buster
 #环境变量
+ENV LANG='en_US.UTF-8' LANGUAGE='en_US:en' LC_ALL='en_US.UTF-8'
 ENV TZ=Asia/Shanghai
 ENV JAVA_HOME=/opt/jdk8u292-b01
 ENV PATH=${JAVA_HOME}/bin:$PATH

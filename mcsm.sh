@@ -1,6 +1,6 @@
 #!/bin/bash
 set -eu
-	if [ ! -f "/opt/mcsm/app.js" ]; then
+	if [ ! -d "/opt/mcsm/node_modules" ]; then
 		echo "未找到面板，开始安装。"
 		git clone https://gitee.com/Suwingser/MCSManager /opt/mcsm
 		npm install --production
