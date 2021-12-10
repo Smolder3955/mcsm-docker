@@ -27,14 +27,6 @@ if [ ! -f "$MCSM/app.js" ]; then
 		npm install --production
 	fi
 
-	if [ "$UPDATE" == "true"  ]; then
-		echo "更新面板。"
-		cd $MCSM
-		git pull
-	else
-		echo "跳过更新。"
-	fi
-
 cd $MCSM
 echo "启动面板"
 
