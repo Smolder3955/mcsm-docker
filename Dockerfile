@@ -1,7 +1,6 @@
 FROM buildpack-deps:buster
 
 # 环境变量
-ENV UPDATE=true
 ENV LANG C.UTF-8
 ENV TZ=Asia/Shanghai
 ENV MCSM=/opt/mcsmanager
@@ -29,9 +28,9 @@ RUN cd /opt \
      
 # 安装JRE8
 RUN cd /opt \
-	&& curl -LJO https://dragonwell.oss-cn-shanghai.aliyuncs.com/8.8.8/Alibaba_Dragonwell_8.8.8_x64_linux.tar.gz \
-	&& tar -xzf Alibaba_Dragonwell_8.8.8_x64_linux.tar.gz \
-	&& rm Alibaba_Dragonwell_8.8.8_x64_linux.tar.gz
+	&& curl -LJO https://dragonwell.oss-cn-shanghai.aliyuncs.com/8.8.9/Alibaba_Dragonwell_8.8.9_x64_linux.tar.gz \
+	&& tar -xzf Alibaba_Dragonwell_8.8.9_x64_linux.tar.gz \
+	&& rm Alibaba_Dragonwell_8.8.9_x64_linux.tar.gz
     
 # 添加脚本
 ADD init.sh /opt/
