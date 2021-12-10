@@ -1,7 +1,6 @@
 FROM buildpack-deps:buster
 
 # 环境变量
-ENV UPDATE=true
 ENV LANG C.UTF-8
 ENV TZ=Asia/Shanghai
 ENV MCSM=/opt/mcsmanager
