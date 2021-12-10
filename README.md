@@ -2,11 +2,10 @@
 
 ## 运行  
 ### 直接使用宿主网络  
-`docker run --name=mcsm -it -d -v <host_ptah>:/opt/mcsmanager --net="host" efsg/mcsm-docker:jre8`  
+`docker run --name=mcsm -it -d -v <host_ptah>:/opt/mcsmanager --net="host" efsg/mcsm-docker:jre17`  
 ### 端口映射  
 默认Web端口为23333，可用`-p`映射容器的端口  
-`docker run --name=mcsm -it -d -v <host_ptah>:/opt/mcsmanager -p 23333:23333 -p 25565:25565 -p 25566:25566 efsg/mcsm-docker:jre8`  
-> 如果是高版本服务端，使用JRE16镜像 `efsg/mcsm-docker:jre16`
+`docker run --name=mcsm -it -d -v <host_ptah>:/opt/mcsmanager -p 23333:23333 -p 25565:25565 -p 25566:25566 efsg/mcsm-docker:jre17`
 ### 变量:
 
 |参数|说明|
